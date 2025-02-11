@@ -73,7 +73,7 @@ function Single() {
   };
 
   return (
-    <div className="bg-transparent h-[65vh] justify-center m-4 shadow-2xl flex-col">
+    <div className="bg-transparent h-auto md:h-[65vh] flex justify-center m-4 shadow-md flex-col">
       <div className='flex justify-between text-white'>
         {/* SIGN*/}
         <div className='flex flex-col m-2 items-center'>
@@ -116,7 +116,7 @@ function Single() {
           <div className="flex items-center w-[60%]">
             <input
               type="text"
-              className="bg-white rounded-sm flex-1 mr-2 outline-none px-1 shadow-md"
+              className="bg-white rounded-sm flex-1 mr-2 outline-none px-1"
               placeholder="Enter a decimal number"
               value={decimal}
               onChange={handleDecimalChange}
@@ -161,7 +161,7 @@ function Single() {
             <p className="ml-4">Hexadecimal Representation</p>
           </div>
           <div className="flex items-center w-[60%]">
-            0x<input
+            <p className='text-white mx-1'>0x</p><input
               type="text"
               className="bg-white rounded-sm flex-1 mr-2 outline-none px-1"
               value={hex}
